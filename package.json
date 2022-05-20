@@ -1,0 +1,14 @@
+{
+  "name": "final-project-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "scss": "node-sass -w assets/SCSS/style.scss -o assets/CSS"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
