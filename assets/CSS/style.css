@@ -24,37 +24,51 @@ body {
   margin-left: auto;
   max-width: 1200px; }
 
-.row-custom {
+.navbar-up-parts {
   font-size: 16px;
   height: 100%;
-  width: 100%;
-  border: 2px solid red; }
+  width: 100%; }
 
 .col-lg-6-custom {
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0;
+  padding-left: 0;
   height: 10px;
   flex: 0 0 50%;
   max-width: 50%; }
+
+.col-lg-8-custom {
+  padding: 0; }
+
+.col-lg-2-custom {
+  padding: 0; }
 
 .navbar-up-part-1 .navar-up-text-1 p {
   color: white;
   font-size: 14px;
   line-height: 1.5;
-  width: 100%; }
-
-.navbar-up-part-2 {
-  text-align: left; }
+  margin-bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+  letter-spacing: 0.5px; }
 
 .dropdown-up {
   width: 150px;
   border: none;
   color: #fff;
-  border-radius: 7px;
   font-size: 14px;
   transition: all 0.3s ease;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-right: 0; }
+
+.dropown-up-custm {
+  padding-left: 10px; }
+
+.dropdown-style {
+  padding: 0; }
+
+.dropdown-style-2 {
+  border-left: 1px rgba(255, 255, 255, 0.5) solid; }
 
 .dropdown-up:hover {
   cursor: pointer; }
@@ -65,14 +79,14 @@ body {
   visibility: hidden;
   opacity: 0;
   color: black;
-  background: #e1e6ea;
+  background: #fff;
   width: 120px;
-  margin-top: 10px;
+  margin-top: 5px;
   transition: all 1s ease;
-  border-radius: 0px 0px 7px 7px;
   transform: translateY(15px);
   cursor: default;
-  list-style-type: none; }
+  list-style-type: none;
+  border: 1px solid rgba(128, 128, 128, 0.3); }
 
 .dropdown-up:hover > .dropdown {
   z-index: 1;
@@ -95,16 +109,39 @@ body {
   display: block;
   text-align: left;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 13px;
   padding: 0;
   transition: all 0.3s ease;
-  color: #000; }
+  color: #000;
+  padding: 5px 0 3px; }
 
 .drop-link:hover {
-  background: #d4dade; }
-
-.drop-link:last-of-type {
-  border-radius: 0px 0px 7px 7px; }
+  background: transparent;
+  color: goldenrod; }
 
 .drop-link:not(:first-child) {
   border-top: 1px solid #d4dade; }
+
+.container-custom-2 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px; }
+
+.row-custom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 -15px 0 -15px; }
+
+.logo {
+  max-width: 100%;
+  height: 121px;
+  display: flex;
+  align-items: center; }
+
+.logo a img {
+  max-width: 100%;
+  border-style: none;
+  border: 2px solid red;
+  align-items: flex-end; }
