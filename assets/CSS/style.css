@@ -142,6 +142,30 @@ body {
 
 .logo a img {
   max-width: 100%;
-  border-style: none;
-  border: 2px solid red;
-  align-items: flex-end; }
+  border-style: none; }
+
+.navbar-col-8-custom {
+  position: static;
+  border: 1px solid red; }
+
+.nav-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.nav-dropdown-home {
+  color: goldenrod;
+  border: 1px solid red;
+  width: 11.7%; }
+
+.nav-dropdown-pages {
+  color: black;
+  width: 11.7%; }
+
+.nav-dropdown-shop {
+  color: black;
+  width: 11.7%; }
+
+.nav-dropdown-blog {
+  color: black;
+  width: 11.7%; }
