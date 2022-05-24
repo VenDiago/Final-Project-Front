@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
@@ -79,7 +80,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 navbar-col-8-custom">
-                            <div class="navbar-menu-area">
+                            <div class="nav-links">
                                 <div class="nav-dropdown">
                                     <div class="dropdown-up dropdown-style nav-dropdown-home">
                                         HOME
@@ -118,9 +119,34 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col-lg-2"></div>
+
+                        <div class="col-lg-2">
+                            <div class="nav-icons">
+                                <div class="Scriptcontent">
+                                    <i id="search-btn" class="bi bi-search"></i>
+                                    <div id="search-overlay" class="block">
+                                        <div class="centered">
+                                            <div id='search-box'>
+                                                <!-- <i id="close-btn" class="fa fa-times fa-2x"></i> -->
+                                                <div class="nav-search-close-bg">
+                                                    <button type="button" class="btn-close" id="close-btn">
+                                                        <span class="icon-cross"></span>
+                                                      </button>
+                                                </div>
+                                                <form action='http://127.0.0.1:5500/index.html' id='search-form' method='get' target='_top'>
+                                                    <input id='search-text' name='q' placeholder='Search entire storage here...' type='text' autocomplete="off" />
+                                                    <button id='search-button' type='submit'>
+                                                        <i class="bi bi-search"></i>
+                                                        <span>Search</span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -134,7 +160,19 @@
     </main>
     <footer></footer>
 </body>
-<script></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+    $(document).ready(function () {
+      $('#close-btn').click(function () {
+        $('#search-overlay').fadeOut();
+        $('#search-btn').show();
+      });
+      $('#search-btn').click(function () {
+        $(this).hide();
+        $('#search-overlay').fadeIn();
+      });
+    });
+  </script>
 
 <script src="main.js"></script>
 

@@ -9,6 +9,7 @@ body {
   line-height: 1.7;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  height: 250vh;
 }
 
 .header {
@@ -180,6 +181,7 @@ body {
 .navbar-col-8-custom {
   position: static;
   border: 1px solid red;
+  // width: 0%;
 }
 
 .nav-dropdown {
@@ -196,13 +198,272 @@ body {
 }
 
 .nav-dropdown-pages {
-  color:black;
-  width: 11.7%;}
+  color: black;
+  width: 11.7%;
+}
 
 .nav-dropdown-shop {
-  color:black;
-  width: 11.7%;}
+  color: black;
+  width: 11.7%;
+}
 
 .nav-dropdown-blog {
-  color:black;
-  width: 11.7%;}
+  color: black;
+  width: 11.7%;
+}
+
+.nav-icons {
+  padding-right: 10px;
+}
+
+// .nav-icons ul {
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding-left: 0;
+//   margin-bottom: 0;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   justify-content: flex-end;
+// }
+
+// .nav-icons ul a:link {
+//   font-size: 20px;
+//   line-height: 1;
+//   color: #333333;
+//   position: relative;
+// }
+
+
+
+
+
+#search-btn {
+  /* position: absolute;
+   top: 1em;
+   right: 1em; */
+  //  background-color: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 2px;
+  color: black;
+}
+
+#search-btn:hover {
+  // background-color: rgba(0, 0, 0, 0.5);
+  color: goldenrod;
+  cursor: pointer;
+
+}
+
+#search-overlay {
+  display: none;
+}
+
+.block {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: 0;
+}
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  padding: 0 30px;
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+
+#search-box {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid gold;
+
+  ::placeholder{
+    color: #fff;
+    font-style: italic;
+  }
+}
+
+#search-form {
+  height: 4.1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+}
+
+#search-text {
+  font-size: 14px;
+  color: #ddd;
+  border-width: 0;
+  background: transparent;
+}
+
+
+#search-box form input{
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  padding: 1px 2px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400px;
+  outline: none;
+
+}
+
+#search-box input[type="text"] {
+  width: 100%;
+  color: white;
+  outline: none;
+  font-size: 1.3em;
+}
+
+#search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4.7em;
+  width: 100px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  border-width: 0;
+  background-color:transparent;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  transition: 0.4s;
+  cursor: pointer;
+  
+
+  i{
+    padding-right: 7px;
+    font-size: 28px;
+  }
+
+  span{
+    font-size: 19px;
+  }
+}
+
+#search-box form button:hover{
+  color: goldenrod;
+  transition: 0.4s;
+}
+
+
+#close-btn {
+  position: fixed;
+  top: 2em;
+  right: 34px;
+}
+
+#close-btn:hover {
+  color: #777;
+  cursor: pointer;
+  
+}
+
+// nav-icon-search Start>>>>>>>
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 20%;
+  height: 20%;
+ 
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: (20px - 5px) / 2;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: goldenrod;
+    border-radius: 1px;
+    
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  span {
+    display: block;
+  }
+
+}
+
+button{
+  background-color:blue;
+}
+
+.btn-close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: none;
+  border-radius: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s;
+  
+  .icon-cross {
+    @include cross(40px, #fff, 6px);   
+  }
+  
+  &:hover,
+  &:focus {
+    transform: rotateZ(90deg);
+    background: none;
+    // reng
+  }
+
+}
+
+.nav-search-close-bg{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 49.5px;
+  right: 49px;
+}
+
+// nav-icon-search End>>>>>>>>>
+
+
