@@ -213,43 +213,34 @@ body {
 }
 
 .nav-icons {
-  padding-right: 10px;
+  // padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
-// .nav-icons ul {
-//   display: flex;
-//   flex-wrap: wrap;
-//   padding-left: 0;
-//   margin-bottom: 0;
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   justify-content: flex-end;
-// }
 
-// .nav-icons ul a:link {
-//   font-size: 20px;
-//   line-height: 1;
-//   color: #333333;
-//   position: relative;
-// }
+// nav-icon-search Search-Start>>>>>>>
 
+.searchcontent{
+  border: 1px solid red;
+  padding-top: 3px;
 
-
-
+  i{
+    // width: 1px;
+    
+    font-size: 17px;
+  }
+}
 
 #search-btn {
-  /* position: absolute;
-   top: 1em;
-   right: 1em; */
-  //  background-color: rgba(0,0,0,0.8);
   padding: 10px;
   border-radius: 2px;
   color: black;
 }
 
 #search-btn:hover {
-  // background-color: rgba(0, 0, 0, 0.5);
   color: goldenrod;
   cursor: pointer;
 
@@ -295,7 +286,7 @@ body {
   margin: 0;
   border-bottom: 1px solid gold;
 
-  ::placeholder{
+  ::placeholder {
     color: #fff;
     font-style: italic;
   }
@@ -320,7 +311,7 @@ body {
 }
 
 
-#search-box form input{
+#search-box form input {
   position: absolute;
   left: 0;
   bottom: 13px;
@@ -350,25 +341,25 @@ body {
   text-align: center;
   line-height: 42px;
   border-width: 0;
-  background-color:transparent;
+  background-color: transparent;
   -webkit-border-radius: 0 2px 2px 0;
   -moz-border-radius: 0 2px 2px 0;
   border-radius: 0 2px 2px 0;
   transition: 0.4s;
   cursor: pointer;
-  
 
-  i{
+
+  i {
     padding-right: 7px;
     font-size: 28px;
   }
 
-  span{
+  span {
     font-size: 19px;
   }
 }
 
-#search-box form button:hover{
+#search-box form button:hover {
   color: goldenrod;
   transition: 0.4s;
 }
@@ -383,10 +374,12 @@ body {
 #close-btn:hover {
   color: #777;
   cursor: pointer;
-  
+
 }
 
-// nav-icon-search Start>>>>>>>
+// nav-icon-search Search-End>>>>>>>
+
+// nav-icon-search Rotate-CloseButton Start>>>>>>>
 @mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
   margin: 0;
   padding: 0;
@@ -395,7 +388,7 @@ body {
   position: relative;
   width: 20%;
   height: 20%;
- 
+
   &:before,
   &:after {
     content: '';
@@ -406,7 +399,7 @@ body {
     height: 2px;
     background: goldenrod;
     border-radius: 1px;
-    
+
   }
 
   &:before {
@@ -423,10 +416,6 @@ body {
 
 }
 
-button{
-  background-color:blue;
-}
-
 .btn-close {
   margin: 0;
   border: 0;
@@ -441,21 +430,20 @@ button{
   align-items: center;
   cursor: pointer;
   transition: all 0.6s;
-  
+
   .icon-cross {
-    @include cross(40px, #fff, 6px);   
+    @include cross(40px, #fff, 6px);
   }
-  
+
   &:hover,
   &:focus {
     transform: rotateZ(90deg);
     background: none;
-    // reng
   }
 
 }
 
-.nav-search-close-bg{
+.nav-search-close-bg {
   width: 50px;
   height: 50px;
   background-color: white;
@@ -466,4 +454,169 @@ button{
 
 // nav-icon-search End>>>>>>>>>
 
+
+
+
+
+.nav-ico-user-set {
+  border: 1px solid red;
+  width: 40px;
+
+  .nav-user-set i{
+    font-size: 18px;
+    height: 10%;
+    color: black;
+    
+  }
+}
+
+.nav-ico-basket {
+  border: 1px solid red;
+  width: 30px;
+
+   #cd-cart-trigger i{
+     font-size: 20px;
+     height: 10%;
+     color:black;
+  }
+}
+
+// nav ico basket panel Start>>>>>>>>>>>>>>>>>>>>>>>
+
+#cd-cart-trigger {
+  right: 0;
+}
+
+#cd-cart {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  padding-top: 50px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+@media only screen and (min-width: 768px) {
+  #cd-cart {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #cd-cart {
+    width: 30%;
+    /* header height has changed */
+    padding-top: 80px;
+  }
+}
+
+
+#cd-cart {
+  right: -100%;
+  background: #FFF;
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  transition: right 0.3s;
+}
+
+#cd-cart.speed-in {
+  right: 0;
+}
+
+#cd-cart>* {
+  padding: 0 1em;
+}
+
+#cd-cart h2 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+#cd-cart .cd-cart-items {
+  padding: 0;
+}
+
+#cd-cart .cd-cart-items li {
+  position: relative;
+  padding: 1em;
+  border-top: 1px solid #e0e6ef;
+}
+
+#cd-cart .cd-cart-items li:last-child {
+  border-bottom: 1px solid #e0e6ef;
+}
+
+#cd-cart .cd-qty,
+#cd-cart .cd-price {
+  color: #a5aebc;
+}
+
+#cd-cart .cd-price {
+  margin-top: .4em;
+}
+
+.no-touch #cd-cart .cd-item-remove:hover {
+  background-color: #e0e6ef;
+}
+
+#cd-cart .cd-cart-total {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#cd-cart .cd-cart-total span {
+  float: right;
+}
+
+#cd-cart .cd-cart-total::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#cd-cart .checkout-btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #7dcf85;
+  color: #FFF;
+  text-align: center;
+}
+
+.no-touch #cd-cart .checkout-btn:hover {
+  background: #a2dda8;
+}
+
+#cd-cart .cd-go-to-cart {
+  text-align: center;
+  margin: 1em 0;
+}
+
+#cd-cart .cd-go-to-cart a {
+  text-decoration: underline;
+}
+
+
+// .block-cart {
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   overflow: auto;
+//   background: rgba(0, 0, 0, 0.7);
+//   margin: 0;
+// }
+
+
+
+
+
+// nav ico basket panel End>>>>>>>>>>>>>>>>>>>>>>>
 
