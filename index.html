@@ -14,6 +14,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
@@ -69,144 +72,168 @@
             </div>
         </div>
         <nav>
-            <div class="">
-                <div class="container container-custom-2">
-                    <div class="row row-custom">
-                        <div class="col-lg-2">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/Image/Navbar-icon/logo.png" alt="Logo">
-                                </a>
-                            </div>
+            <div class="container container-custom-2">
+                <div class="row row-custom">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/Image/Navbar-icon/logo.png" alt="Logo">
+                            </a>
                         </div>
-                        <div class="col-lg-8 navbar-col-8-custom">
-                            <div class="nav-links">
-                                <div class="nav-dropdown">
-                                    <div class="dropdown-up dropdown-style nav-dropdown-home">
-                                        HOME
-                                        <i class="down"></i>
-                                        <ul class="dropdown">
-                                            <li><a href="#" class="drop-link">Home Version 01</a></li>
-                                            <li><a href="#" class="drop-link">Home Version 02</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown-up dropdown-style nav-dropdown-pages">
-                                        PAGES
-                                        <i class="down"></i>
-                                        <ul class="dropdown">
-                                            <li><a href="#" class="drop-link">$ USD</a></li>
-                                            <li><a href="#" class="drop-link">€ EURO</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown-up dropdown-style nav-dropdown-shop">
-                                        SHOP
-                                        <i class="down"></i>
-                                        <ul class="dropdown">
-                                            <li><a href="#" class="drop-link">$ USD</a></li>
-                                            <li><a href="#" class="drop-link">€ EURO</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown-up dropdown-style nav-dropdown-blog">
-                                        BLOG
-                                        <i class="down"></i>
-                                        <ul class="dropdown">
-                                            <li><a href="#" class="drop-link">$ USD</a></li>
-                                            <li><a href="#" class="drop-link">€ EURO</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-contact">
-                                        CONTACT US
-                                    </div>
+                    </div>
+                    <div class="col-lg-8 navbar-col-8-custom">
+                        <div class="nav-links">
+                            <div class="nav-dropdown">
+                                <div class="dropdown-up dropdown-style nav-dropdown-home">
+                                    HOME
+                                    <i class="bi bi-chevron-down"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#" class="drop-link">Home Version 01</a></li>
+                                        <li><a href="#" class="drop-link">Home Version 02</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-up dropdown-style nav-dropdown-pages">
+                                    PAGES
+                                    <i class="bi bi-chevron-down"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#" class="drop-link">$ USD</a></li>
+                                        <li><a href="#" class="drop-link">€ EURO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-up dropdown-style nav-dropdown-shop">
+                                    SHOP
+                                    <i class="bi bi-chevron-down"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#" class="drop-link">$ USD</a></li>
+                                        <li><a href="#" class="drop-link">€ EURO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-up dropdown-style nav-dropdown-blog">
+                                    BLOG
+                                    <i class="bi bi-chevron-down"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#" class="drop-link">$ USD</a></li>
+                                        <li><a href="#" class="drop-link">€ EURO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-contact">
+                                    CONTACT US
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-lg-2">
-                            <div class="nav-icons">
-                                <div class="searchcontent">
-                                    <i id="search-btn" class="bi bi-search"></i>
-                                    <div id="search-overlay" class="block">
-                                        <div class="centered">
-                                            <div id='search-box'>
-                                                <!-- <i id="close-btn" class="fa fa-times fa-2x"></i> -->
-                                                <div class="nav-search-close-bg">
-                                                    <button type="button" class="btn-close" id="close-btn">
-                                                        <span class="icon-cross"></span>
-                                                    </button>
-                                                </div>
-                                                <form action='http://127.0.0.1:5500/index.html' id='search-form'
-                                                    method='get' target='_top'>
-                                                    <input id='search-text' name='q'
-                                                        placeholder='Search entire storage here...' type='text'
-                                                        autocomplete="off" />
-                                                    <button id='search-button' type='submit'>
-                                                        <i class="bi bi-search"></i>
-                                                        <span>Search</span>
-                                                    </button>
-                                                </form>
+                    <div class="col-lg-2">
+                        <div class="nav-icons">
+                            <div class="searchcontent">
+                                <i id="search-btn" class="bi bi-search"></i>
+                                <div id="search-overlay" class="block">
+                                    <div class="centered">
+                                        <div id='search-box'>
+                                            <div class="nav-search-close-bg">
+                                                <button type="button" class="btn-close" id="close-btn">
+                                                    <span class="icon-cross"></span>
+                                                </button>
                                             </div>
+                                            <form action='http://127.0.0.1:5500/index.html' id='search-form'
+                                                method='get' target='_top'>
+                                                <input id='search-text' name='q'
+                                                    placeholder='Search entire storage here...' type='text'
+                                                    autocomplete="off" />
+                                                <button id='search-button' type='submit'>
+                                                    <i class="bi bi-search"></i>
+                                                    <span>Search</span>
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="nav-ico-user-set">
-                                    <div class="dropdown-up dropdown-style nav-user-set">
-                                        <i class="bi bi-gear"></i>
-                                        <ul class="dropdown">
-                                            <li><a href="#" class="drop-link">Login</a></li>
-                                            <li><a href="#" class="drop-link">Register</a></li>
-                                            <li><a href="#" class="drop-link">My Account</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="nav-ico-basket">
-                                    <div id="cd-cart-trigger" style="border: 1px solid red; width: 50px;"><i class="bi bi-handbag"></i></div>
-                                    <div id="search-overlay" class="block-cart">
-                                        <div id="cd-cart">
-                                            <button id="cd-shadow-layer" style="border:10px solid red ;">Kick Me</button>
-                                            <h1>Hello</h1>
-                                            <ul class="cd-cart-items">
-                                                <li>
-                                                    <span class="cd-qty">1x</span> Product Name
-                                                    <div class="cd-price">$9.99</div>
-                                                    <a href="#0" class="cd-item-remove cd-img-replace"></a>
-                                                </li>
-                                
-                                                <li>
-                                                    <span class="cd-qty">2x</span> Product Name
-                                                    <div class="cd-price">$19.98</div>
-                                                    <a href="#0" class="cd-item-remove cd-img-replace"></a>
-                                                </li>
-                                
-                                                <li>
-                                                    <span class="cd-qty">1x</span> Product Name
-                                                    <div class="cd-price">$9.99</div>
-                                                    <a href="#0" class="cd-item-remove cd-img-replace"></a>
-                                                </li>
-                                            </ul> <!-- cd-cart-items -->
-                                
-                                            <div class="cd-cart-total">
-                                                <p>Total <span>$39.96</span></p>
-                                            </div> <!-- cd-cart-total -->
-                                
-                                            <a href="#0" class="checkout-btn">Checkout</a>
-                                
-                                            <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
-                                        </div> <!-- cd-cart -->
-                                    </div>
-                                </div>
-
-
                             </div>
-                        </div>
+                            <!-- setting start -->
+                            <div class="nav-ico-user-set">
+                                <div class="dropdown-up dropdown-style nav-user-set">
+                                    <i class="bi bi-gear"></i>
+                                    <ul class="dropdown">
+                                        <li><a href="#" class="drop-link">Login</a></li>
+                                        <li><a href="#" class="drop-link">Register</a></li>
+                                        <li><a href="#" class="drop-link">My Account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- setting end -->
 
+                            <!-- basket start -->
+                            <div class="nav-ico-basket">
+                                <div id="cd-cart-trigger" class="basket-ico"><i class="bi bi-handbag"></i></div>
+                                <div id="" class="">
+                                    <div id="cd-cart">
+                                        <button id="cd-shadow-layer" style="border:10px solid red ;">Kick
+                                            Me</button>
+                                        <h1>Hello</h1>
+                                        <ul class="cd-cart-items">
+                                            <li>
+                                                <span class="cd-qty">1x</span> Product Name
+                                                <div class="cd-price">$9.99</div>
+                                                <a href="#0" class="cd-item-remove cd-img-replace"></a>
+                                            </li>
+
+                                            <li>
+                                                <span class="cd-qty">2x</span> Product Name
+                                                <div class="cd-price">$19.98</div>
+                                                <a href="#0" class="cd-item-remove cd-img-replace"></a>
+                                            </li>
+
+                                            <li>
+                                                <span class="cd-qty">1x</span> Product Name
+                                                <div class="cd-price">$9.99</div>
+                                                <a href="#0" class="cd-item-remove cd-img-replace"></a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="cd-cart-total">
+                                            <p>Total <span>$39.96</span></p>
+                                        </div>
+
+                                        <a href="#0" class="checkout-btn">Checkout</a>
+
+                                        <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- basket end -->
+                        </div>
                     </div>
                 </div>
-
+            </div>
         </nav>
     </header>
     <main>
         <section>
+            <div class="div">
+                <div class="container-slider">
+                    <div class="carousel">
+                        <input type="radio" id="carousel-1" name="carousel[]" checked>
+                        <input type="radio" id="carousel-2" name="carousel[]">
+                        <ul class="carousel__items">
+                            <li class="carousel__item"><img
+                                    src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG"
+                                    alt=""></li>
+                            <li class="carousel__item"><img
+                                    src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg"
+                                    alt=""></li>
+                        </ul>
+                        <div class="carousel__prev">
+                            <label for="carousel-1"></label>
+                            <label for="carousel-2"></label>
+                        </div>
+                        <div class="carousel__next">
+                            <label for="carousel-1"></label>
+                            <label for="carousel-2"></label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
     <footer></footer>
