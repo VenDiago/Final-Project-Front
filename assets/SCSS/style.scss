@@ -285,7 +285,7 @@ $color-black: black;
 .searchcontent {
   // border: 1px solid red;
   padding-top: 3px;
-  z-index: 4;
+  z-index: 5;
 }
 
 #search-btn {
@@ -293,13 +293,11 @@ $color-black: black;
   border-radius: 2px;
   color: black;
   font-size: 19px;
-
 }
 
 #search-btn:hover {
   color: goldenrod;
   cursor: pointer;
-
 }
 
 #search-overlay {
@@ -388,10 +386,10 @@ $color-black: black;
 
 #search-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 4.7em;
-  width: 100px;
+  top: 0px;
+  left: 87%;
+  height: 0;
+  width: 173px;
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -403,6 +401,7 @@ $color-black: black;
   border-radius: 0 2px 2px 0;
   transition: 0.4s;
   cursor: pointer;
+  
 
 
   i {
@@ -412,6 +411,10 @@ $color-black: black;
 
   span {
     font-size: 19px;
+    color: white;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+
   }
 }
 
@@ -420,11 +423,11 @@ $color-black: black;
   transition: 0.4s;
 }
 
-
 #close-btn {
   position: fixed;
   top: 2em;
-  right: 34px;
+  left: 92.5%;
+  z-index: 5;
 }
 
 #close-btn:hover {
@@ -487,6 +490,7 @@ $color-black: black;
   align-items: center;
   cursor: pointer;
   transition: all 0.6s;
+  z-index: 5;
 
   .icon-cross {
     @include cross(40px, #fff, 6px);
@@ -595,6 +599,10 @@ $color-black: black;
   -webkit-transition: right 0.3s;
   -moz-transition: right 0.3s;
   transition: right 0.3s;
+}
+
+#cd-cart button{
+  z-index: 5;
 }
 
 #cd-cart.speed-in {

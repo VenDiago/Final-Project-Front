@@ -212,7 +212,7 @@ body {
 
 .searchcontent {
   padding-top: 3px;
-  z-index: 4; }
+  z-index: 5; }
 
 #search-btn {
   padding: 10px;
@@ -297,10 +297,10 @@ body {
 
 #search-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 4.7em;
-  width: 100px;
+  top: 0px;
+  left: 87%;
+  height: 0;
+  width: 173px;
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -316,7 +316,10 @@ body {
     padding-right: 7px;
     font-size: 28px; }
   #search-button span {
-    font-size: 19px; }
+    font-size: 19px;
+    color: white;
+    width: 100%;
+    font-family: "Montserrat", sans-serif; }
 
 #search-box form button:hover {
   color: goldenrod;
@@ -325,7 +328,8 @@ body {
 #close-btn {
   position: fixed;
   top: 2em;
-  right: 34px; }
+  left: 92.5%;
+  z-index: 5; }
 
 #close-btn:hover {
   color: #777;
@@ -344,7 +348,8 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  z-index: 5; }
   .btn-close .icon-cross {
     margin: 0;
     padding: 0;
@@ -435,6 +440,9 @@ body {
   -webkit-transition: right 0.3s;
   -moz-transition: right 0.3s;
   transition: right 0.3s; }
+
+#cd-cart button {
+  z-index: 5; }
 
 #cd-cart.speed-in {
   right: 0; }
