@@ -3,9 +3,9 @@ window.onload = function () {
     $(document).ready(function () {
         $('#close-btn').click(function () {
             $('#search-overlay').fadeOut();
-            $('#search-btn').show();
+            $('.search-btn').show();
         });
-        $('#search-btn').click(function () {
+        $('.search-btn').click(function () {
             //   $(this).hide();
             $('#search-overlay').fadeIn();
         });
@@ -20,6 +20,9 @@ window.onload = function () {
             $cart_trigger = $('#cd-cart-trigger'),
             $lateral_cart = $('#cd-cart'),
             $shadow_layer = $('#cd-shadow-layer');
+        let bold_color = document.getElementById("shop-bg");
+        let rm_search = document.getElementById("rm_search")
+
 
         //open lateral menu on mobile
 
@@ -30,6 +33,9 @@ window.onload = function () {
             //close lateral menu (if it's open)
             $menu_navigation.removeClass('speed-in');
             toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
+            bold_color.classList.add('cd-cart-block');
+            rm_search.classList.remove('btn-search');
+            rm_search.classList.remove('bi-search');
         });
 
         //close lateral cart or lateral menu
@@ -70,7 +76,6 @@ window.onload = function () {
 
     // navbar scroll
 
-    let timVine = document.getElementById("tim-vine");
     let navbar = document.getElementById("main-nav-2");
     let scrollsize = document.getElementById("when-scroll");
 
@@ -82,12 +87,10 @@ window.onload = function () {
         if (scrollPos > navPos) {
             navbar.classList.add('sticky');
             scrollsize.classList.add('navbarOffsetMargin');
-            console.log("Isleyir")
-            
+
         } else {
             navbar.classList.remove('sticky');
             scrollsize.classList.remove('navbarOffsetMargin');
-            console.log("Islemir")
 
         }
     });

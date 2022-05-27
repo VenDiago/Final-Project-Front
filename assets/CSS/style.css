@@ -164,6 +164,15 @@ body {
     font-size: 10px;
     margin: 0;
     padding: 0; }
+  .nav-links .nav-dropdown-home .dropdown-custom-home {
+    margin-top: 43px;
+    width: 160px;
+    height: 67px;
+    transition: 1.3s;
+    border: none; }
+
+.nav-links .nav-dropdown-home:hover > .dropdown-custom-home {
+  transition: 0.4s; }
 
 .nav-links .nav-dropdown-pages {
   padding-top: 4.5px;
@@ -174,6 +183,45 @@ body {
     font-size: 10px;
     margin: 0;
     padding: 0; }
+  .nav-links .nav-dropdown-pages ul a:link {
+    font-size: 12px;
+    font-weight: 100; }
+  .nav-links .nav-dropdown-pages ul li {
+    padding-top: 7px; }
+  .nav-links .nav-dropdown-pages ul li:first-child a {
+    font-size: 13px;
+    font-weight: bold; }
+  .nav-links .nav-dropdown-pages .dropdown-custom-pages {
+    transition: 1.3s;
+    border: none;
+    overflow: hidden; }
+  .nav-links .nav-dropdown-pages .droplist-page1 {
+    margin-top: 43px;
+    width: 1170px;
+    height: 205px;
+    left: 15px;
+    overflow: hidden; }
+  .nav-links .nav-dropdown-pages .droplist-page2 {
+    background: none;
+    margin-top: 43px;
+    width: 292.5px;
+    height: 205px;
+    left: 308.1px; }
+  .nav-links .nav-dropdown-pages .droplist-page3 {
+    background: none;
+    margin-top: 43px;
+    width: 292.5px;
+    height: 205px;
+    right: 308.1px; }
+  .nav-links .nav-dropdown-pages .droplist-page4 {
+    background: none;
+    margin-top: 43px;
+    width: 300px;
+    height: 205px;
+    right: 15px; }
+
+.nav-links .nav-dropdown-home:hover > .dropdown-custom-pages {
+  transition: 0.4s; }
 
 .nav-links .nav-dropdown-shop {
   padding-top: 4.5px;
@@ -184,6 +232,34 @@ body {
     font-size: 10px;
     margin: 0;
     padding: 0; }
+  .nav-links .nav-dropdown-shop .dropdown-custom-shop {
+    margin-top: 43px;
+    width: 220px;
+    height: 144px;
+    transition: 1.3s; }
+  .nav-links .nav-dropdown-shop ul li:first-child {
+    padding-top: 10px; }
+  .nav-links .nav-dropdown-shop .dw-home-1 {
+    margin-top: 43px;
+    width: 242px;
+    height: 135px;
+    transition: 1.3s;
+    left: 218px;
+    top: -25px; }
+  .nav-links .nav-dropdown-shop .dw-home-2 {
+    margin-top: 43px;
+    width: 242px;
+    height: 135px;
+    transition: 1.3s;
+    left: 218px;
+    top: 10px; }
+  .nav-links .nav-dropdown-shop .dw-home-3 {
+    margin-top: 43px;
+    width: 242px;
+    height: 135px;
+    transition: 1.3s;
+    left: 218px;
+    top: 45px; }
 
 .nav-links .nav-dropdown-blog {
   padding-top: 4.5px;
@@ -194,6 +270,11 @@ body {
     font-size: 10px;
     margin: 0;
     padding: 0; }
+  .nav-links .nav-dropdown-blog .dropdown-custom-blog {
+    margin-top: 43px;
+    width: 220px;
+    height: 280px;
+    transition: 1.3s; }
 
 .nav-links .nav-contact {
   padding-top: 4.5px;
@@ -219,15 +300,16 @@ body {
 
 .searchcontent {
   padding-top: 3px;
-  z-index: 5; }
+  z-index: 4; }
 
-#search-btn {
+.search-btn {
   padding: 10px;
   border-radius: 2px;
   color: black;
-  font-size: 19px; }
+  font-size: 19px;
+  z-index: 1; }
 
-#search-btn:hover {
+.search-btn:hover {
   color: goldenrod;
   cursor: pointer; }
 
@@ -407,6 +489,16 @@ body {
 .nav-ico-user-set .nav-user-set i:hover {
   color: goldenrod; }
 
+.nav-ico-user-set .dw-gear-set {
+  margin-top: -10px;
+  width: 155px;
+  height: 135px;
+  right: 45px;
+  transition: 0.3s; }
+
+.nav-ico-user-set ul li:first-child {
+  padding-top: 20px; }
+
 .nav-ico-basket {
   padding: 1.1px 0 0 5px;
   width: 35px; }
@@ -433,6 +525,17 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   z-index: 5; }
 
+.cd-cart-block {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0; }
+
 @media only screen and (min-width: 768px) {
   #cd-cart {
     width: 350px; } }
@@ -445,7 +548,7 @@ body {
 
 #cd-cart {
   right: -100%;
-  background: #FFF;
+  background: #FFFF;
   -webkit-transition: right 0.3s;
   -moz-transition: right 0.3s;
   transition: right 0.3s; }
@@ -664,7 +767,6 @@ button {
   position: relative;
   box-sizing: border-box;
   height: 121px;
-  border: 1px solid red;
   z-index: 2; }
 
 #main-nav-2.sticky {
