@@ -22,6 +22,9 @@ window.onload = function () {
             $shadow_layer = $('#cd-shadow-layer');
         let bold_color = document.getElementById("shop-bg");
         let rm_search = document.getElementById("rm_search")
+        // let rm_x_butn = document.getElementById("shop-bg")
+        let orxan = document.getElementById("orxan")
+
 
 
         //open lateral menu on mobile
@@ -34,25 +37,18 @@ window.onload = function () {
             $menu_navigation.removeClass('speed-in');
             toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
             bold_color.classList.add('cd-cart-block');
-            rm_search.classList.remove('btn-search');
-            rm_search.classList.remove('bi-search');
+            // rm_search.classList.remove('btn-search');
+            // rm_search.classList.remove('bi-search');
+            
         });
 
         //close lateral cart or lateral menu
         $shadow_layer.on('click', function () {
             $shadow_layer.removeClass('is-visible');
+            // rm_x_butn.removeChild(rm_x_butn.firstChild);
+            // orxan.removeChild(rm_x_butn.firstChild);
+
             // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
-            if ($lateral_cart.hasClass('speed-in')) {
-                $lateral_cart.removeClass('speed-in').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
-                    $('body').removeClass('overflow-hidden');
-                });
-                $menu_navigation.removeClass('speed-in');
-            } else {
-                $menu_navigation.removeClass('speed-in').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
-                    $('body').removeClass('overflow-hidden');
-                });
-                $lateral_cart.removeClass('speed-in');
-            }
         });
 
     });

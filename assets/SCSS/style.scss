@@ -561,6 +561,7 @@ $color-black: black;
   top: 2em;
   left: 92.5%;
   z-index: 5;
+  opacity: 5;
 }
 
 #close-btn:hover {
@@ -938,7 +939,7 @@ $color-black: black;
       padding: 0;
       list-style-type: none;
       width: 100%;
-      height: 600px;
+      height: 500px;
       position: relative;
     }
 
@@ -969,7 +970,7 @@ $color-black: black;
         width: 40px;
         height: 40px;
         position: absolute;
-        top: 39.2%;
+        top: 45%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         transition: all .3s ease;
@@ -1003,7 +1004,7 @@ $color-black: black;
 
     &__next {
       >label {
-        top: 39%;
+        top: 44.9%;
       }
     }
 
@@ -1049,7 +1050,7 @@ $color-black: black;
 
 .carousel-content {
   position: absolute;
-  bottom: 56%;
+  bottom: 49.5%;
 }
 
 .carousel-content .slide-1 {
@@ -1086,13 +1087,12 @@ $color-black: black;
 }
 
 
-
-button {
+.carouse1 button {
   position: relative;
   border-radius: 50px;
   padding: 12px 40px;
   left: 100px;
-  bottom: 301px;
+  bottom: 200px;
   cursor: pointer;
   border: none;
   transition: 0.5s;
@@ -1100,10 +1100,14 @@ button {
 }
 
 
-.carousel-bttn button:hover {
+.carouse1 button:hover {
   background-color: black;
   color: goldenrod;
   transition: 0.5s;
+}
+
+.containercustm-2{
+  // max-width: 1100px;
 }
 
 // main slider End<<<<<<<<<<<<<&
@@ -1141,3 +1145,62 @@ button {
 .navbarOffsetMargin {
   height: 80px;
 }
+
+
+// scroll navbar end<<<<<<<<<
+
+
+
+
+#cd-cart:first-child button{
+  left: 64%;
+  border: 1px solid red;
+  width: 60px;
+  opacity: 4;
+  
+}
+
+
+// main sect service Star>>>>>>
+
+
+.bg-truck {
+  background-color: #fcedda;
+}
+
+.bg-24hours{
+  background-color: #f2fbcb;
+}
+
+.bg-dollar{
+  background-color: #f7d8f9;
+}
+
+.policy-icon img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+
+
+.service-policy-item{
+    display: flex;
+    padding: 30px;
+
+  h5{
+    padding-left: 20px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+
+  }
+
+  
+
+
+// main sect service Ends<<<<<<
+
