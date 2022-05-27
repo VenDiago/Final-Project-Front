@@ -74,7 +74,6 @@ body {
   cursor: pointer; }
 
 .dropdown {
-  z-index: -1;
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -132,13 +131,17 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 -15px 0 -15px; }
+  margin: 0 -15px 0 -15px;
+  height: 121px; }
 
-.logo {
+#navbar-2 {
+  background-color: white; }
+
+#logo {
   max-width: 100%;
-  height: 121px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
 
 .logo a img {
   max-width: 100%;
@@ -152,58 +155,62 @@ body {
   flex-wrap: wrap;
   justify-content: center; }
 
-.nav-links {
-  border: 1px solid green; }
-  .nav-links .nav-dropdown-home {
-    padding-top: 4.5px;
-    color: goldenrod;
-    font-size: 16px;
-    width: 11.7%; }
-    .nav-links .nav-dropdown-home i {
-      font-size: 10px;
-      margin: 0;
-      padding: 0; }
-  .nav-links .nav-dropdown-pages {
-    padding-top: 4.5px;
-    color: black;
-    font-size: 16px;
-    width: 11.7%; }
-    .nav-links .nav-dropdown-pages i {
-      font-size: 10px;
-      margin: 0;
-      padding: 0; }
-  .nav-links .nav-dropdown-shop {
-    padding-top: 4.5px;
-    color: black;
-    font-size: 16px;
-    width: 11.7%; }
-    .nav-links .nav-dropdown-shop i {
-      font-size: 10px;
-      margin: 0;
-      padding: 0; }
-  .nav-links .nav-dropdown-blog {
-    padding-top: 4.5px;
-    color: black;
-    font-size: 16px;
-    width: 11.7%; }
-    .nav-links .nav-dropdown-blog i {
-      font-size: 10px;
-      margin: 0;
-      padding: 0; }
-  .nav-links .nav-contact {
-    padding-top: 4.5px;
-    color: black;
-    font-size: 16px;
-    width: 13.3%;
-    transition: 0.4s; }
-  .nav-links .nav-contact:hover {
-    color: goldenrod;
-    cursor: pointer;
-    transition: 0.4s; }
-  .nav-links .nav-dropdown-pages:hover,
-  .nav-links .nav-dropdown-shop:hover,
-  .nav-links .nav-dropdown-blog:hover {
-    color: goldenrod; }
+.nav-links .nav-dropdown-home {
+  padding-top: 4.5px;
+  color: goldenrod;
+  font-size: 16px;
+  width: 11.7%; }
+  .nav-links .nav-dropdown-home i {
+    font-size: 10px;
+    margin: 0;
+    padding: 0; }
+
+.nav-links .nav-dropdown-pages {
+  padding-top: 4.5px;
+  color: black;
+  font-size: 16px;
+  width: 11.7%; }
+  .nav-links .nav-dropdown-pages i {
+    font-size: 10px;
+    margin: 0;
+    padding: 0; }
+
+.nav-links .nav-dropdown-shop {
+  padding-top: 4.5px;
+  color: black;
+  font-size: 16px;
+  width: 11.7%; }
+  .nav-links .nav-dropdown-shop i {
+    font-size: 10px;
+    margin: 0;
+    padding: 0; }
+
+.nav-links .nav-dropdown-blog {
+  padding-top: 4.5px;
+  color: black;
+  font-size: 16px;
+  width: 11.7%; }
+  .nav-links .nav-dropdown-blog i {
+    font-size: 10px;
+    margin: 0;
+    padding: 0; }
+
+.nav-links .nav-contact {
+  padding-top: 4.5px;
+  color: black;
+  font-size: 16px;
+  width: 13.3%;
+  transition: 0.4s; }
+
+.nav-links .nav-contact:hover {
+  color: goldenrod;
+  cursor: pointer;
+  transition: 0.4s; }
+
+.nav-links .nav-dropdown-pages:hover,
+.nav-links .nav-dropdown-shop:hover,
+.nav-links .nav-dropdown-blog:hover {
+  color: goldenrod; }
 
 .nav-icons {
   display: flex;
@@ -248,7 +255,7 @@ body {
 .centered {
   display: inline-block;
   vertical-align: middle;
-  width: 80%;
+  width: 77.5%;
   padding: 0 30px;
   color: #fff;
   border: none;
@@ -261,7 +268,8 @@ body {
   border-bottom: 1px solid gold; }
   #search-box ::placeholder {
     color: #fff;
-    font-style: italic; }
+    font-style: italic;
+    font-family: "Montserrat", sans-serif; }
 
 #search-form {
   height: 4.1em;
@@ -311,10 +319,11 @@ body {
   -moz-border-radius: 0 2px 2px 0;
   border-radius: 0 2px 2px 0;
   transition: 0.4s;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif; }
   #search-button i {
     padding-right: 7px;
-    font-size: 28px; }
+    font-size: 20px; }
   #search-button span {
     font-size: 19px;
     color: white;
@@ -647,3 +656,24 @@ button {
   background-color: black;
   color: goldenrod;
   transition: 0.5s; }
+
+#main-nav-2 {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  height: 121px;
+  border: 1px solid red;
+  z-index: 2; }
+
+#main-nav-2.sticky {
+  position: fixed;
+  top: 0;
+  height: 76px;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s; }
+
+.navbarOffsetMargin {
+  height: 80px; }

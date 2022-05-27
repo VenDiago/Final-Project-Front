@@ -66,6 +66,32 @@ window.onload = function () {
             $background_layer.addClass('is-visible');
         }
     }
+
+
+    // navbar scroll
+
+    let timVine = document.getElementById("tim-vine");
+    let navbar = document.getElementById("main-nav-2");
+    let scrollsize = document.getElementById("when-scroll");
+
+
+    let navPos = navbar.getBoundingClientRect().top;
+
+    window.addEventListener("scroll", e => {
+        let scrollPos = window.scrollY;
+        if (scrollPos > navPos) {
+            navbar.classList.add('sticky');
+            scrollsize.classList.add('navbarOffsetMargin');
+            console.log("Isleyir")
+            
+        } else {
+            navbar.classList.remove('sticky');
+            scrollsize.classList.remove('navbarOffsetMargin');
+            console.log("Islemir")
+
+        }
+    });
+
 }
 
 
