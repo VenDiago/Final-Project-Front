@@ -23,7 +23,7 @@ window.onload = function () {
         let bold_color = document.getElementById("shop-bg");
         let rm_search = document.getElementById("rm_search")
         // let rm_x_butn = document.getElementById("shop-bg")
-        let orxan = document.getElementById("orxan")
+        // let orxan = document.getElementById("orxan")
 
 
 
@@ -39,7 +39,7 @@ window.onload = function () {
             bold_color.classList.add('cd-cart-block');
             // rm_search.classList.remove('btn-search');
             // rm_search.classList.remove('bi-search');
-            
+
         });
 
         //close lateral cart or lateral menu
@@ -91,7 +91,20 @@ window.onload = function () {
         }
     });
 
+
+
+    
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
