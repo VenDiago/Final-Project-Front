@@ -16,18 +16,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
@@ -58,18 +55,18 @@
                                     </div>
                                     <div class="col-lg-2 ">
                                         <div class="dropdown-up dropown-up-custm dropdown-style-2">
-                                            <img src="assets/Image/Navbar-icon/en.png" alt="flag">
+                                            <img src="assets/Image/Navbar-icon/en.png" alt="Viewflag">
                                             English
                                             <i class="down"></i>
                                             <ul class="dropdown">
                                                 <li>
                                                     <a href="#" class="drop-link"><img
-                                                            src="assets/Image/Navbar-icon/en.png" alt="flag">
+                                                            src="assets/Image/Navbar-icon/en.png" alt="Viewflag">
                                                         English</a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="drop-link"><img
-                                                            src="assets/Image/Navbar-icon/fr.png" alt="flag">
+                                                            src="assets/Image/Navbar-icon/fr.png" alt="Viewflag">
                                                         French</a>
                                                 </li>
                                             </ul>
@@ -83,13 +80,13 @@
             </div>
         </div>
         <nav id="navbar-2">
-            <div id="main-nav-2">
+            <div id="main-nav-2" style="border: 1px solid red;">
                 <div class="container container-custom-2 ">
                     <div id="when-scroll" class="row row-custom">
                         <div class="col-lg-2">
                             <div id="logo">
                                 <a href="index.html">
-                                    <img src="assets/Image/Navbar-icon/logo.png" alt="Logo">
+                                    <img src="assets/Image/Navbar-icon/logo.png" alt="ViewLogo">
                                 </a>
                             </div>
                         </div>
@@ -99,7 +96,7 @@
                                     <div class="dropdown-up dropdown-style nav-dropdown-home">
                                         HOME
                                         <i class="bi bi-chevron-down"></i>
-                                        <ul class="dropdown  dropdown-custom-home">
+                                        <ul id="dw-home" class="dropdown dropdown-custom-home">
                                             <li><a href="#" class="drop-link">Home Version 01</a></li>
                                             <li><a href="#" class="drop-link">Home Version 02</a></li>
                                         </ul>
@@ -108,7 +105,7 @@
                                     <div class="dropdown-up dropdown-style nav-dropdown-pages">
                                         PAGES
                                         <i class="bi bi-chevron-down"></i>
-                                        <ul class="dropdown dropdown-custom-pages droplist-page1">
+                                        <ul id="dw-page1" class="dropdown dropdown-custom-pages droplist-page1">
                                             <li><a href="#" class="drop-link">Column 01</a></li>
                                             <li><a href="#" class="drop-link">Shop Grid Left Sidebar</a></li>
                                             <li><a href="#" class="drop-link">Shop Grid Right Sidebar</a></li>
@@ -116,21 +113,21 @@
                                             <li><a href="#" class="drop-link">Shop List Right Sidebar</a></li>
 
                                         </ul>
-                                        <ul class="dropdown dropdown-custom-pages droplist-page2">
+                                        <ul id="dw-page2" class="dropdown dropdown-custom-pages droplist-page2">
                                             <li><a href="#" class="drop-link">Column 02</a></li>
                                             <li><a href="#" class="drop-link">Product Details</a></li>
                                             <li><a href="#" class="drop-link">Product Details Affiliate</a></li>
                                             <li><a href="#" class="drop-link">Product Details Variable</a></li>
                                             <li><a href="#" class="drop-link">Product Details Group</a></li>
                                         </ul>
-                                        <ul class="dropdown dropdown-custom-pages droplist-page3">
+                                        <ul id="dw-page3" class="dropdown dropdown-custom-pages droplist-page3">
                                             <li><a href="#" class="drop-link">Column 03</a></li>
                                             <li><a href="#" class="drop-link">Cart</a></li>
                                             <li><a href="#" class="drop-link">Checkout</a></li>
                                             <li><a href="#" class="drop-link">Compare</a></li>
                                             <li><a href="#" class="drop-link">Wishlist</a></li>
                                         </ul>
-                                        <ul class="dropdown dropdown-custom-pages droplist-page4">
+                                        <ul id="dw-page4" class="dropdown dropdown-custom-pages droplist-page4">
                                             <li><a href="#" class="drop-link">Column 04</a></li>
                                             <li><a href="#" class="drop-link">My-Account</a></li>
                                             <li><a href="#" class="drop-link">Login-Register</a></li>
@@ -142,12 +139,12 @@
                                     <div class="dropdown-up dropdown-style nav-dropdown-shop">
                                         SHOP
                                         <i class="bi bi-chevron-down"></i>
-                                        <ul class="dropdown dropdown-custom-shop">
+                                        <ul id="dw-shop" class="dropdown dropdown-custom-shop">
                                             <li><a href="#" class="drop-link">
                                                     <div class="dropdown-up dropdown-style">
                                                         Shop Grid Layout
                                                         <i class="bi bi-arrow-right-short"></i>
-                                                        <ul class="dropdown   dw-home-1">
+                                                        <ul class="dropdown   dw-shop-1">
                                                             <li><a href="#" class="drop-link">Shop Grid Left Sidebar</a>
                                                             </li>
                                                             <li><a href="#" class="drop-link">Shop Grid Right
@@ -163,7 +160,7 @@
                                                     <div class="dropdown-up dropdown-style">
                                                         Shop List Layout
                                                         <i class="bi bi-arrow-right-short"></i>
-                                                        <ul class="dropdown  dw-home-2">
+                                                        <ul class="dropdown  dw-shop-2">
                                                             <li><a href="#" class="drop-link">Shop List Left Sidebar</a>
                                                             </li>
                                                             <li><a href="#" class="drop-link">Shop List Right
@@ -177,7 +174,7 @@
                                                     <div class="dropdown-up dropdown-style">
                                                         Products Details
                                                         <i class="bi bi-arrow-right-short"></i>
-                                                        <ul class="dropdown dw-home-3">
+                                                        <ul class="dropdown dw-shop-3">
                                                             <li><a href="#" class="drop-link">Product Details</a></li>
                                                             <li><a href="#" class="drop-link">Product Details
                                                                     Affiliate</a></li>
@@ -194,7 +191,7 @@
                                     <div class="dropdown-up dropdown-style nav-dropdown-blog">
                                         BLOG
                                         <i class="bi bi-chevron-down"></i>
-                                        <ul class="dropdown dropdown-custom-blog">
+                                        <ul id="dw-blog" class="dropdown dropdown-custom-blog">
                                             <li><a href="#" class="drop-link">Blog Left Sidebar</a></li>
                                             <li><a href="#" class="drop-link">Blog Right Sidebar</a></li>
                                             <li><a href="#" class="drop-link">Blog Grid No Sidebar</a></li>
@@ -259,34 +256,86 @@
                                             <!-- <button type="button" class="btn-close" id="close-btn">
                                                 <span class="icon-cross"></span>
                                             </button> -->
-                                            <h1>Hello</h1>
-                                            <ul class="cd-cart-items">
-                                                <li>
-                                                    <span class="cd-qty">1x</span> Product Name
-                                                    <div class="cd-price">$9.99</div>
-                                                    <a href="#0" class="cd-item-remove cd-img-replace"></a>
-                                                </li>
+                                            <div class="minicart-inner-content">
+                                                <div class="minicart-close">
+                                                    <i class="ion-android-close"></i>
+                                                </div>
+                                                <div class="minicart-content-box">
+                                                    <div class="minicart-item-wrapper">
+                                                        <ul>
+                                                            <li class="minicart-item">
+                                                                <div class="minicart-thumb">
+                                                                    <a href="product-details.html">
+                                                                        <img src="assets/img/cart/cart-1.jpg"
+                                                                            alt="product">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="minicart-content">
+                                                                    <h3 class="product-name">
+                                                                        <a href="product-details.html">Flowers bouquet
+                                                                            pink for all flower lovers</a>
+                                                                    </h3>
+                                                                    <p>
+                                                                        <span class="cart-quantity">1
+                                                                            <strong>×</strong></span>
+                                                                        <span class="cart-price">$100.00</span>
+                                                                    </p>
+                                                                </div>
+                                                                <button class="minicart-remove"><i
+                                                                        class="ion-android-close"></i></button>
+                                                            </li>
+                                                            <li class="minicart-item">
+                                                                <div class="minicart-thumb">
+                                                                    <a href="product-details.html">
+                                                                        <img src="assets/img/cart/cart-2.jpg"
+                                                                            alt="product">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="minicart-content">
+                                                                    <h3 class="product-name">
+                                                                        <a href="product-details.html">Jasmine flowers
+                                                                            white for all flower lovers</a>
+                                                                    </h3>
+                                                                    <p>
+                                                                        <span class="cart-quantity">1
+                                                                            <strong>×</strong></span>
+                                                                        <span class="cart-price">$80.00</span>
+                                                                    </p>
+                                                                </div>
+                                                                <button class="minicart-remove"><i
+                                                                        class="ion-android-close"></i></button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
 
-                                                <li>
-                                                    <span class="cd-qty">2x</span> Product Name
-                                                    <div class="cd-price">$19.98</div>
-                                                    <a href="#0" class="cd-item-remove cd-img-replace"></a>
-                                                </li>
+                                                    <div class="minicart-pricing-box">
+                                                        <ul>
+                                                            <li>
+                                                                <span>sub-total</span>
+                                                                <span><strong>$300.00</strong></span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Eco Tax (-2.00)</span>
+                                                                <span><strong>$10.00</strong></span>
+                                                            </li>
+                                                            <li>
+                                                                <span>VAT (20%)</span>
+                                                                <span><strong>$60.00</strong></span>
+                                                            </li>
+                                                            <li class="total">
+                                                                <span>total</span>
+                                                                <span><strong>$370.00</strong></span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
 
-                                                <li>
-                                                    <span class="cd-qty">1x</span> Product Name
-                                                    <div class="cd-price">$9.99</div>
-                                                    <a href="#0" class="cd-item-remove cd-img-replace"></a>
-                                                </li>
-                                            </ul>
-
-                                            <div class="cd-cart-total">
-                                                <p>Total <span>$39.96</span></p>
+                                                    <div class="minicart-button">
+                                                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> view
+                                                            cart</a>
+                                                        <a href="cart.html"><i class="fa fa-share"></i> checkout</a>
+                                                    </div>
+                                                </div>
                                             </div>
-
-                                            <a href="#0" class="checkout-btn">Checkout</a>
-
-                                            <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -306,7 +355,7 @@
                         <input type="radio" id="carousel-1" name="carousel[]" checked>
                         <input type="radio" id="carousel-2" name="carousel[]">
                         <ul class="carousel__items">
-                            <li class="carousel__item"><img src="assets/Image/Main-Slider/slider-1.jpg" alt="View">
+                            <li class="carousel__item"><img src="assets/Image/Main-Slider/slider-1.jpg" alt="ViewView">
                                 <div class="carousel-content">
                                     <div class="slide-1">
                                         <h5>Top Selling!</h5>
@@ -316,7 +365,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="carousel__item"><img src="assets/Image/Main-Slider/slider-2.jpg" alt="View">
+                            <li class="carousel__item"><img src="assets/Image/Main-Slider/slider-2.jpg" alt="ViewView">
                                 <div class="carousel-content">
                                     <div class="slide-1">
                                         <h5>Best Selling!</h5>
@@ -349,7 +398,7 @@
                     <div class="col-lg-4 col-lg-4-custom">
                         <div class="service-policy-item mt-30 bg-truck">
                             <div class="policy-icon">
-                                <img src="assets/Image/Main-service/policy-truck.png" alt="View">
+                                <img src="assets/Image/Main-service/policy-truck.png" alt="ViewView">
                             </div>
                             <div class="policy-content">
                                 <h5>FREE SHIPPING</h5>
@@ -360,7 +409,7 @@
                     <div class="col-lg-4">
                         <div class="service-policy-item mt-30 bg-24hours">
                             <div class="policy-icon">
-                                <img src="assets/Image/Main-service/policy-24hour.png" alt="View">
+                                <img src="assets/Image/Main-service/policy-24hour.png" alt="ViewView">
                             </div>
                             <div class="policy-content">
                                 <h5>ONLINE SUPPORT</h5>
@@ -371,7 +420,7 @@
                     <div class="col-lg-4">
                         <div class="service-policy-item mt-30 bg-dollar">
                             <div class="policy-icon">
-                                <img src="assets/Image/Main-service/policy-dollar.png" alt="View">
+                                <img src="assets/Image/Main-service/policy-dollar.png" alt="ViewView">
                             </div>
                             <div class="policy-content">
                                 <h5>MONEY RETURN</h5>
@@ -382,476 +431,536 @@
                 </div>
             </div>
         </section>
-        <section>
-            <section class="our-product section-padding">
-                <div class="container container-custom-2">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="head-title" class="text-center">
-                                <h2>Our Product</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        <section class="our-product section-padding">
+            <div class="container container-custom-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="head-title" class="text-center">
+                            <h2>Our Product</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product-carousel-4">
+                            <div class="slick-list draggable">
+                                <div class="slick-track">
+                                    <div class="product-item product-slide">
+                                        <div class="product-bg">
+                                            <a href="product-details.html">
+                                                <img src="assets/Image/Main-Products/product-pink-snicker.png"
+                                                    alt="View">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h5 class="product-name">
+                                                <a href="product-details.html">Quickiin Mens shoes</a>
+                                            </h5>
+                                            <div class="price-box">
+                                                <span class="price-regular">$80.00</span>
+                                                <span class="price-old"><del>$70.00</del></span>
+                                            </div>
+                                            <div class="product-action-link">
+                                                <a href="#" data-original-title="Wishlist"><i
+                                                        class="bi bi-heart"></i></a>
+                                                <a href="#" data-original-title="Add To Cart"><i
+                                                        class="bi bi-handbag"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span><i
+                                                            class="bi bi-eye"></i></span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item product-slide">
+                                        <div class="product-bg">
+                                            <a href="product-details.html">
+                                                <img src="assets/Image/Main-Products/product-gray-snicker.png"
+                                                    alt="View">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h5 class="product-name">
+                                                <a href="product-details.html">Rexpo Womens shoes</a>
+                                            </h5>
+                                            <div class="price-box">
+                                                <span class="price-regular">$80.00</span>
+                                                <span class="price-old"><del>$70.00</del></span>
+                                            </div>
+                                            <div class="product-action-link">
+                                                <a href="#" data-original-title="Wishlist"><i
+                                                        class="bi bi-heart"></i></a>
+                                                <a href="#" data-original-title="Add To Cart"><i
+                                                        class="bi bi-handbag"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quick_view">
+                                                    <span><i class="bi bi-eye"></i></span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item product-slide">
+                                        <div class="product-bg">
+                                            <a href="product-details.html">
+                                                <img src="assets/Image/Main-Products/product-purple-snicker.png"
+                                                    alt="View">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h5 class="product-name">
+                                                <a href="product-details.html">Primitive Mens shoes</a>
+                                            </h5>
+                                            <div class="price-box">
+                                                <span class="price-regular">$80.00</span>
+                                                <span class="price-old"><del>$70.00</del></span>
+                                            </div>
+                                            <div class="product-action-link">
+                                                <a href="#" data-original-title="Wishlist"><i
+                                                        class="bi bi-heart"></i></a>
+                                                <a href="#" data-original-title="Add To Cart"><i
+                                                        class="bi bi-handbag"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quick_view">
+                                                    <span><i class="bi bi-eye"></i></span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-item product-slide">
+                                        <div class="product-bg">
+                                            <a href="product-details.html">
+                                                <img src="assets/Image/Main-Products/product-gray-snicker.png"
+                                                    alt="View">
+                                            </a>
+                                        </div>
+                                        <div class="product-content">
+                                            <h5 class="product-name">
+                                                <a href="product-details.html">Leather Mens Slipper</a>
+                                            </h5>
+                                            <div class="price-box">
+                                                <span class="price-regular">$80.00</span>
+                                                <span class="price-old"><del>$70.00</del></span>
+                                            </div>
+                                            <div class="product-action-link">
+                                                <a href="#" data-original-title="Wishlist"><i
+                                                        class="bi bi-heart"></i></a>
+                                                <a href="#" data-original-title="Add To Cart"><i
+                                                        class="bi bi-handbag"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quick_view">
+                                                    <span><i class="bi bi-eye"></i></span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- ><>>><>>><<<><>><<><><><>><><<><><> -->
+                </div>
+        </section>
+        <section>
+            <div class="main-statics">
+                <div class="container container-custom-2 static-part">
+                    <div class="row">
+                        <div class="col-md-6 col-md-6-custom">
+                            <div class="img-container pl-12">
+                                <a href="#">
+                                    <img src="assets/Image/Main-Banner/banner-1.png" alt="banner_View">
+                                </a>
+                                <div class="banner-text">
+                                    <h5>sports shoes</h5>
+                                    <h3>20% Off<br>For Sports men</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-6-custom">
+                            <div class="img-container pr-12">
+                                <a href="#">
+                                    <img src="assets/Image/Main-Banner/banner-2.png" alt="banner_View">
+                                </a>
+                                <div class="banner-text">
+                                    <h5>sports shoes</h5>
+                                    <h3>20% Off<br>For Sports men</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="top-seller-area">
+                <div class="container container-custom-2">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div
-                                class="multiple-item product-carousel-4 mbn-50 slick-row-15 slick-arrow-style slick-initialized slick-slider">
-                                <button type="button" class="slick-prev slick-arrow" style=""><i
-                                        class="fa fa-angle-left"></i></button>
-                                <!-- product single item start -->
-                                <div class="slick-list draggable">
-                                    <div class="slick-track"
-                                        style="opacity: 1; width: 4200px; transform: translate3d(-1200px, 0px, 0px);">
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="-4"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-pink-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Quickiin Mens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
+                            <div class="section-title text-center">
+                                <h2>top seller</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="product-banner">
+                                <a href="#">
+                                    <img src="assets/Image/Main-Banner-TopSeller/banner-topseller.png" alt="View">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="top-seller-product">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="product-item-1">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/Image/Main-Banner-TopSeller/pro-small-1.png"
+                                                            alt="View">
+                                                    </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="-3"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-gray-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Rexpo Womens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
+                                            <div class="col-lg-6">
+                                                <div class="pro-item-content">
+                                                    <h6 class="product-name">
+                                                        <a href="product-details.html">Simple Fabric Shoe</a>
+                                                    </h6>
+                                                    <div class="price-box">
+                                                        <span class="price-regular">$80.00</span>
+                                                        <span class="price-old"><del>$70.00</del></span>
+                                                    </div>
+                                                    <div id="ratings">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="product-link-2">
+                                                        <a href="#" class="heart-ico">
+                                                            <i class="bi bi-heart"></i></a>
+                                                        <a href="#" class="handbag-ico">
+                                                            <i class="bi bi-handbag"></i></a>
+                                                        <a href="#" class="eye-ico">
+                                                            <i class="bi bi-eye"></i></i></span> </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="-2"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-purple-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Primitive Mens
-                                                        shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="product-item-1">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/Image/Main-Banner-TopSeller/pro-small-3.png"
+                                                            alt="View">
+                                                    </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="-1"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-gray-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Leather Mens
-                                                        Slipper</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-current slick-active"
-                                            data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="0">
-                                                    <img src="assets/Image/Main-Products/product-black-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="0">Leather Mens Slipper</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="0"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="0"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="0"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-active" data-slick-index="1"
-                                            aria-hidden="false" tabindex="0" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="0">
-                                                    <img src="assets/Image/Main-Products/product-pink-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="0">Quickiin Mens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="0"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="0"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="0"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-active" data-slick-index="2"
-                                            aria-hidden="false" tabindex="0" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="0">
-                                                    <img src="assets/Image/Main-Products/product-gray-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="0">Rexpo Womens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="0"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="0"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="0"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-active" data-slick-index="3"
-                                            aria-hidden="false" tabindex="0" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="0">
-                                                    <img src="assets/Image/Main-Products/product-purple-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="0">Primitive Mens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="0"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="0"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="0"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide" data-slick-index="4"
-                                            aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-gray-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Leather Mens
-                                                        Slipper</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="5"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-black-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Leather Mens
-                                                        Slipper</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="6"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-pink-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Quickiin Mens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="7"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-gray-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Rexpo Womens shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="8"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-purple-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Primitive Mens
-                                                        shoes</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item mb-50 slick-slide slick-cloned" data-slick-index="9"
-                                            id="" aria-hidden="true" tabindex="-1" style="width: 270px;">
-                                            <div class="product-thumb">
-                                                <a href="product-details.html" tabindex="-1">
-                                                    <img src="assets/Image/Main-Products/product-gray-snicker.png"
-                                                        alt="">
-                                                </a>
-                                            </div>
-                                            <div class="product-content">
-                                                <h5 class="product-name">
-                                                    <a href="product-details.html" tabindex="-1">Leather Mens
-                                                        Slipper</a>
-                                                </h5>
-                                                <div class="price-box">
-                                                    <span class="price-regular">$80.00</span>
-                                                    <span class="price-old"><del>$70.00</del></span>
-                                                </div>
-                                                <div class="product-action-link">
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Wishlist" tabindex="-1"><i
-                                                            class="ion-android-favorite-outline"></i></a>
-                                                    <a href="#" data-toggle="tooltip" title=""
-                                                        data-original-title="Add To Cart" tabindex="-1"><i
-                                                            class="ion-bag"></i></a>
-                                                    <a href="#" data-toggle="modal" data-target="#quick_view"
-                                                        tabindex="-1"> <span data-toggle="tooltip" title=""
-                                                            data-original-title="Quick View"><i
-                                                                class="ion-ios-eye-outline"></i></span> </a>
+                                            <div class="col-lg-6">
+                                                <div class="pro-item-content">
+                                                    <h6 class="product-name">
+                                                        <a href="product-details.html">Quickiin Mens Shoes</a>
+                                                    </h6>
+                                                    <div class="price-box">
+                                                        <span class="price-regular">$80.00</span>
+                                                        <span class="price-old"><del>$70.00</del></span>
+                                                    </div>
+                                                    <div id="ratings">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="product-link-2">
+                                                        <a href="#" class="heart-ico">
+                                                            <i class="bi bi-heart"></i></a>
+                                                        <a href="#" class="handbag-ico">
+                                                            <i class="bi bi-handbag"></i></a>
+                                                        <a href="#" class="eye-ico">
+                                                            <i class="bi bi-eye"></i></i></span> </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="slick-next slick-arrow" style=""><i
-                                        class="fa fa-angle-right"></i></button>
+                                <div class="row">
+                                    <div class="col-lg-6 padng-top-45">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="product-item-1">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/Image/Main-Banner-TopSeller/pro-small-2.png"
+                                                            alt="View">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="pro-item-content">
+                                                    <h6 class="product-name">
+                                                        <a href="product-details.html">Exclusive Mens Shoe</a>
+                                                    </h6>
+                                                    <div class="price-box">
+                                                        <span class="price-regular">$80.00</span>
+                                                        <span class="price-old"><del>$70.00</del></span>
+                                                    </div>
+                                                    <div id="ratings">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="product-link-2">
+                                                        <a href="#" class="heart-ico">
+                                                            <i class="bi bi-heart"></i></a>
+                                                        <a href="#" class="handbag-ico">
+                                                            <i class="bi bi-handbag"></i></a>
+                                                        <a href="#" class="eye-ico">
+                                                            <i class="bi bi-eye"></i> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 padng-top-45">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="product-item-1">
+                                                    <a href="product-details.html">
+                                                        <img src="assets/Image/Main-Banner-TopSeller/pro-small-4.png"
+                                                            alt="View">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="pro-item-content">
+                                                    <h6 class="product-name">
+                                                        <a href="product-details.html">Primitive Mens Shoes</a>
+                                                    </h6>
+                                                    <div class="price-box">
+                                                        <span class="price-regular">$80.00</span>
+                                                        <span class="price-old"><del>$70.00</del></span>
+                                                    </div>
+                                                    <div id="ratings">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="product-link-2">
+                                                        <a href="#" class="heart-ico">
+                                                            <i class="bi bi-heart"></i></a>
+                                                        <a href="#" class="handbag-ico">
+                                                            <i class="bi bi-handbag"></i></a>
+                                                        <a href="#" class="eye-ico">
+                                                            <i class="bi bi-eye"></i></i></span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
         <section>
+            <div class="our-blog-area">
+                <div class="container container-custom-2">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center">
+                                <h2>our blog</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="product-item-1">
+                                        <a href="product-details.html">
+                                            <img src="assets/Image/Main-Blog/blog-1.png" alt="View">
+                                        </a>
+                                    </div>
+                                    <div class="blog-item-content">
+                                        <h5 class="product-name">
+                                            <a href="product-details.html">
+                                                Celebrity Daughter Opens About to Having Her Eye color
+                                            </a>
+                                        </h5>
+                                        <div class="content-box">
+                                            <ul class="blog-about">
+                                                <li><span>By: </span>Admin,</li>
+                                                <li><span>On: </span>14.07.2029</li>
+                                            </ul>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-item-1">
+                                        <a href="product-details.html">
+                                            <img src="assets/Image/Main-Blog/blog-2.png" alt="View">
+                                        </a>
+                                    </div>
+                                    <div class="blog-item-content">
+                                        <h5 class="product-name">
+                                            <a href="product-details.html">
+                                                Sotto Winner Offering Money To Any Man That Will Date Her
+                                            </a>
+                                        </h5>
+                                        <div class="content-box">
+                                            <ul class="blog-about">
+                                                <li><span>By: </span>Admin,</li>
+                                                <li><span>On: </span>14.07.2029</li>
+                                            </ul>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="product-item-1">
+                                        <a href="product-details.html">
+                                            <img src="assets/Image/Main-Blog/blog-3.png" alt="View">
+                                        </a>
+                                    </div>
+                                    <div class="blog-item-content">
+                                        <h5 class="product-name">
+                                            <a href="product-details.html">
+                                                Children Left Home Alone For 4 Days In TV Series Experiment
+                                            </a>
+                                        </h5>
+                                        <div class="content-box">
+                                            <ul class="blog-about">
+                                                <li><span>By: </span>Admin,</li>
+                                                <li><span>On: </span>14.07.2029</li>
+                                            </ul>
+                                        </div>
+                                        <div class="read-more">
+                                            <a href="blog-details.html">Read More...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <
+        <div class="brand-area">
+            <div class="container container-custom-2">
+                <div class="col-lg-12">
+                </div>
+
+            </div>
+        </div>
+
+        <section>
+            <div class="owl-caousel owl-theme"></div>
+            <div class="item">
+                <img src="assets/Image/Main-Blog/blog-1.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/Image/Main-Blog/blog-2.png" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/Image/Main-Blog/blog-3.png" alt="">
+            </div>
+
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-wrapper ">
+            <div class="footer-area">
+                <div class="container container-custom-2">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="footer-item">
+                                <h5 class="footer-title">My Account</h5>
+                                <div class="footer-body">
+                                    <ul class="location-wrap">
+                                        <li><i class="bi bi-geo-alt"></i>184 Main Rd E, St Albans VIC 3021, Australia
+                                        </li>
+                                        <li><i class="bi bi-envelope"></i>Mail Us: <a href="mailto:yourmail@gmail.com"
+                                                class="footer-mail">yourmail@gmail.com</a></li>
+                                        <li><i class="bi bi-telephone"></i>Phone: <a href="+0025425456554"
+                                                class="footer-phone">+ 00 254 254565</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-item">
+                                <h5 class="footer-title">My Account</h5>
+                                <div class="footer-body">
+                                    <ul class="useful-link">
+                                        <li><a href="#" class="text-animat">Ecommerce</a></li>
+                                        <li><a href="#" class="text-animat">Shopify</a></li>
+                                        <li><a href="#" class="text-animat">Prestashop</a></li>
+                                        <li><a href="#" class="text-animat">Opencart</a></li>
+                                        <li><a href="#" class="text-animat">Magento</a></li>
+                                        <li><a href="#" class="text-animat">Jigoshop</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-item">
+                                <h5 class="footer-title">Information</h5>
+                                <div class="footer-body">
+                                    <ul class="useful-link">
+                                        <li><a href="#" class="text-animat">Home</a></li>
+                                        <li><a href="#" class="text-animat">About Us</a></li>
+                                        <li><a href="#" class="text-animat">Contact Us</a></li>
+                                        <li><a href="#" class="text-animat">Returns & Exchange</a></li>
+                                        <li><a href="#" class="text-animat">Shipping & Delivery</a></li>
+                                        <li><a href="#" class="text-animat">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-item footer-item-3" style="">
+                                <h5 class="footer-title">Quick Links</h5>
+                                <div class="footer-body">
+                                    <ul class="useful-link">
+                                        <li><a href="#" class="text-animat">Store Location</a></li>
+                                        <li><a href="#" class="text-animat">My Account</a></li>
+                                        <li><a href="#" class="text-animat">Orders Tracking</a></li>
+                                        <li><a href="#" class="text-animat">Size Guide</a></li>
+                                        <li><a href="#" class="text-animat">Shopping Rates</a></li>
+                                        <li><a href="#" class="text-animat">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="main.js"></script>

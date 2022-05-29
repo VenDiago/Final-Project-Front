@@ -37,8 +37,8 @@ window.onload = function () {
             $menu_navigation.removeClass('speed-in');
             toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
             bold_color.classList.add('cd-cart-block');
-            // rm_search.classList.remove('btn-search');
-            // rm_search.classList.remove('bi-search');
+            rm_search.classList.remove('btn-search');
+            rm_search.classList.remove('bi-search');
 
         });
 
@@ -74,6 +74,14 @@ window.onload = function () {
 
     let navbar = document.getElementById("main-nav-2");
     let scrollsize = document.getElementById("when-scroll");
+    let addscroll_dw1 = document.getElementById("dw-home")
+    let addscroll_dw2_1 = document.getElementById("dw-page1")
+    let addscroll_dw2_2 = document.getElementById('dw-page2')
+    let addscroll_dw2_3 = document.getElementById('dw-page3')
+    let addscroll_dw2_4 = document.getElementById('dw-page4')
+    let addscroll_dw3 = document.getElementById('dw-shop')
+    let addscroll_dw4 = document.getElementById('dw-blog')
+
 
 
     let navPos = navbar.getBoundingClientRect().top;
@@ -83,17 +91,48 @@ window.onload = function () {
         if (scrollPos > navPos) {
             navbar.classList.add('sticky');
             scrollsize.classList.add('navbarOffsetMargin');
+            addscroll_dw1.classList.add('dd-custm-home');
+            addscroll_dw2_1.classList.add('dd-custm-page1')
+            addscroll_dw2_2.classList.add('dd-custm-page2')
+            addscroll_dw2_3.classList.add('dd-custm-page3')
+            addscroll_dw2_4.classList.add('dd-custm-page4')
+            addscroll_dw3.classList.add('dd-custm-shop');
+            addscroll_dw4.classList.add('dd-custm-blog');
+
 
         } else {
             navbar.classList.remove('sticky');
             scrollsize.classList.remove('navbarOffsetMargin');
+            addscroll_dw1.classList.remove('dd-custm-home');
+            addscroll_dw2_1.classList.remove('dd-custm-page1');
+            addscroll_dw2_2.classList.remove('dd-custm-page2')
+            addscroll_dw2_3.classList.remove('dd-custm-page3');
+            addscroll_dw2_4.classList.remove('dd-custm-page4');
+            addscroll_dw3.classList.remove('dd-custm-shop');
+            addscroll_dw4.classList.remove('dd-custm-blog');
 
         }
     });
 
 
 
-    
+    $(document).ready(function () {
+        $("#news-slider").owlCarousel({
+            items: 3,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [980, 2],
+            itemsMobile: [600, 1],
+            navigation: true,
+            navigationText: ["", ""],
+            pagination: true,
+            autoPlay: true
+        });
+    });
+
+
+
+
+
 
 }
 
