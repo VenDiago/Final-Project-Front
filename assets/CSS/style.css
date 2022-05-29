@@ -552,6 +552,17 @@ body {
 .nav-ico-user-set ul li:first-child {
   padding-top: 20px; }
 
+#cd-cart button:hover {
+  color: #e3a51e; }
+
+.btn-cartm {
+  z-index: 3;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 23.8%;
+  right: 100%; }
+
 .nav-ico-basket {
   padding: 1.1px 0 0 5px;
   width: 35px; }
@@ -835,7 +846,6 @@ body {
 
 #cd-cart:first-child button {
   left: 64%;
-  border: 1px solid red;
   width: 60px;
   opacity: 4; }
 

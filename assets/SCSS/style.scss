@@ -193,7 +193,7 @@ body {
 
 .navbar-col-8-custom {
   position: static;
-  // border: 1px solid red;
+  // 
   // width: 0%;
 }
 
@@ -216,13 +216,14 @@ $color-black: black;
   .nav-dropdown-home {
     padding-top: 4.5px;
     color: goldenrod;
-    // border: 1px solid red;
+    // 
     font-size: $dropdownav-size;
     width: $dropdownav-width;
 
-    .goldenron{
+    .goldenron {
       color: goldenrod;
     }
+
     i {
       font-size: 10px;
       margin: 0;
@@ -464,7 +465,7 @@ $color-black: black;
 
   }
 
-  .nav-contact{
+  .nav-contact {
     padding-top: 4.5px;
     color: $color-black;
     font-size: $dropdownav-size;
@@ -472,7 +473,8 @@ $color-black: black;
     transition: 0.4s;
     color: black;
   }
-  .nav-contact a{
+
+  .nav-contact a {
     color: #000;
   }
 
@@ -500,7 +502,7 @@ $color-black: black;
 // nav-icon-search Search-Start>>>>>>>
 
 .searchcontent {
-  // border: 1px solid red;
+  // 
   padding-top: 3px;
   z-index: 4;
 }
@@ -749,7 +751,7 @@ $color-black: black;
     font-size: 18px;
     height: 10%;
     color: black;
-    // border: 1px solid red;
+    // 
   }
 
   .nav-user-set i:hover {
@@ -769,6 +771,20 @@ $color-black: black;
     padding-top: 20px;
   }
 
+} 
+
+#cd-cart button:hover {
+  color: #e3a51e;
+}
+
+
+.btn-cartm {
+  z-index: 3;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 23.8%;
+  right: 100%;
 }
 
 .nav-ico-basket {
@@ -1208,7 +1224,7 @@ $color-black: black;
   position: relative;
   box-sizing: border-box;
   height: 121px;
-  // border: 1px solid red;
+  // 
   z-index: 3;
 
 }
@@ -1237,7 +1253,7 @@ $color-black: black;
 
 #cd-cart:first-child button {
   left: 64%;
-  border: 1px solid red;
+  
   width: 60px;
   opacity: 4;
 
@@ -2049,7 +2065,7 @@ a {
   transition: 0.4s;
 }
 
-.contact-info ul{
+.contact-info ul {
   padding: 0;
 
 }
