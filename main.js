@@ -116,19 +116,62 @@ window.onload = function () {
 
 
 
-    $(document).ready(function () {
-        $("#news-slider").owlCarousel({
-            items: 3,
-            itemsDesktop: [1199, 3],
-            itemsDesktopSmall: [980, 2],
-            itemsMobile: [600, 1],
-            navigation: true,
-            navigationText: ["", ""],
-            pagination: true,
-            autoPlay: true
-        });
-    });
+    $('.blog-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        autoplay:false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
 
+      $('.topseller-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        autoplay:true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 2
+          }
+        }
+      })
+
+      $('.brand-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        autoplay:false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 4
+          }
+        }
+      })
 
 
 

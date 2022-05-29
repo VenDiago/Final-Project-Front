@@ -1688,6 +1688,16 @@ img {
   }
 }
 
+.top-seller-area {
+  .top-seller-product {
+    .topseller-carousel {
+      .owl-nav {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
 .product-link-2 a:hover {
   background: #e3a51e;
   color: white;
@@ -1787,10 +1797,30 @@ a {
 
 // main Brand area sect Start>>>>>>
 
+.brand-area {
 
+  padding: 80px 0;
 
-.brand-area {}
+  .brand-body {
+    padding: 0 15px;
+  }
 
+}
+
+.brand-item img {
+  opacity: 0.3;
+  max-width: 100%;
+  transition: 0.4s;
+}
+.brand-carousel .brand-item img {
+  margin:0 70.5px;
+  width: 152px;
+   height:51px;
+}
+
+.brand-item img:hover{
+  opacity: 1;
+}
 
 
 
@@ -1882,14 +1912,14 @@ a {
         font-family: "Open Sans", sans-serif;
 
 
-        a{
+        a {
           color: #333333;
           transition: 0.4s;
         }
       }
 
 
-      .text-animat:hover{
+      .text-animat:hover {
         color: #e3a51e;
         padding-left: 5px;
         transition: 0.4s;
@@ -1897,9 +1927,9 @@ a {
 
     }
 
-    .footer-item-3{
-      margin-left:100px; 
-      padding:0 15px;
+    .footer-item-3 {
+      margin-left: 100px;
+      padding: 0 15px;
     }
 
 
