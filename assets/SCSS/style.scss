@@ -406,7 +406,7 @@ input::placeholder{
 .main-statics-mb-size{
 // width: 10%;
 // padding-left:20px;
-margin: 0 15px;
+margin: 0 10px;
 // border: 1px solid red;
 }
 
@@ -415,15 +415,22 @@ margin: 0 15px;
   padding: 0 20px;
 }
 
+#img-contain-mb{
+padding-bottom: 30px;
+}
+
 
 #subtitle-mb{
   font-size: 20px;
-  padding-bottom: 10;
+  padding-bottom: 10px;
 }
 #subtitle-mb-2{
   font-size: 20px;
 }
-
+#mb-resize-main-statis{
+  width: 95%;
+  padding-left: 10px;
+}
 
 
 
