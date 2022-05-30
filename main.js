@@ -70,7 +70,7 @@ window.onload = function () {
     }
 
 
-    // navbar scroll
+    // navbar scroll Desktop Start
 
     let navbar = document.getElementById("main-nav-2");
     let scrollsize = document.getElementById("when-scroll");
@@ -114,6 +114,28 @@ window.onload = function () {
         }
     });
 
+    // navbar scroll Desktop End.
+    
+
+
+    $('.ourproduct-carousel').owlCarousel({
+      loop: true,
+      margin:45,
+      nav: false,
+      dots: false,
+      autoplay:false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
 
 
     $('.blog-carousel').owlCarousel({
